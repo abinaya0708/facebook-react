@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-page{
+    height: 100vh;
+    background-color:#f0f2f5;
+    .container{
+        width:80%;
+        margin:auto;
+        padding-top: 7%;
+        .error{
+            color:red;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        .row{
+            // display: flex;
+            align-items: center;
+            .col{
+                // width:50%;
+                .card1{
+                    h1{
+                        color:#1877f2;
+                        font-size: 50px;
+                        padding:5px 0;
+                    }
+                    h2{
+                        font-family: sans-serif;
+                        font-weight: 500;
+                        padding:10px 0;
+                    }
+                }
+                .card2{
+                    // width:60%;
+                    margin:auto;
+                    
+                    form{
+                        padding:20px;
+                        background-color: #fff;
+                        border:1px solid #ccc;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        .num-div{
+                            padding:8px 0;
+                            input{
+                                width:100%;
+                                padding:10px 5px;
+                                border-radius: 5px;
+                                border: none;
+                                border: 1px solid #ddd;
+                            }
+                            input::placeholder{
+                                color:#929494;
+                            }
+                        }
+                        .psw-div{
+                            padding: 8px 0;
+                            input{
+                                width:100%;
+                                padding:10px 5px;
+                                border-radius: 5px;
+                                border: none;
+                                border: 1px solid #ddd;
+                            }
+                            input::placeholder{
+                                color:#929494;
+                            }
+                        }
+                        .login-btn{
+                            text-align: center;
+                            padding:10px 0 8px 0;
+                            button{
+                                background-color: #1877f2;
+                                width:100%;
+                                padding:10px;
+                                border: none;
+                                border-radius: 5px;
+                                color:#fff;
+                                cursor: pointer;
+                            }
+                        }
+                        p{
+                            color:#1877f2;
+                            font-size: 14px;
+                            text-align: center;
+                            padding:5px 0 8px 0;
+                        }
+                        p:hover{
+                            text-align: center;
+                            text-decoration: underline;
+                            cursor: pointer;
+                            
+                        }
+                        .create-btn{
+                            text-align: center;
+                            padding: 20px 0 8px 0;
+                            button{
+                                background-color:#42b72a;
+                                width:50%;
+                                margin: auto;
+                                padding:10px;
+                                border: none;
+                                border-radius: 5px;
+                                color:#fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .card-btm{
+                        padding: 8px 0;
+                        text-align: center;
+                        font-size: 14px;
+                        span{
+                            color:black;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:0px){
+    .login-page{
+        .card{
+            width:100%
+        }
+    }
+    
+}
+@media(min-width:320px){
+    .login-page{
+        .col{
+            width:90%
+        }
+        .card2{
+            width: 80%;
+        }
+    } 
+}
+
+@media(min-width:720px){
+    .login-page{
+        .row{
+            display: flex;
+        }
+        .col{
+            width:50%
+        }
+        .card2{
+            width: 80%;
+        }
+    }
+    
+}
+
+@media(min-width:960px){
+    .login-page{
+        .row{
+            display: flex;
+        }
+        .col{
+            width:50%
+        }
+        .card2{
+            width: 60%;
+        }
+    }
+    
+}
+
